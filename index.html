@@ -9,109 +9,70 @@
 
     <article>
 	  <header>
-		<h1>Spotting adversarial samples for speaker verification by neural vocoders</h1>
+		<h1>Adversarial samples for ASR and PR by attacking upstream</h1>
 	  </header>
 	</article>
-    <div><b>Paper:</b> <a href="https://arxiv.org/abs/2107.00309">arXiv</a></div>
-	<div><b>Code:</b> <a href="https://github.com/HaibinWu666/spot-adv-by-vocoder">GitHub</a></div>
-	<div><b>Authors:</b>Haibin Wu, Po-chun Hsu, Ji Gao, Shanshan Zhang, Shen Huang, Jian Kang, Zhiyong Wu, Helen Meng, Hung-yi Lee</div>
-	<div><b>Abstract:</b> Automatic speaker verification (ASV), one of the most important technology for biometric identification, has been widely adopted in security-critic applications, including transaction authentication and access control. However, previous works have shown ASV is seriously vulnerable to recently emerged adversarial attacks, yet effective countermeasures against them are limited. In this paper, we adopt neural vocoders to spot adversarial samples for ASV. We use neural vocoder to re-synthesize audio and find that the difference between the ASV scores for the original and re-synthesized audio is a good indicator to distinguish genuine and adversarial samples. As the very beginning work in this direction of detecting adversarial samples for ASV, there is no reliable baseline for comparison. So we first implement Griffin-Lim for detection and set it as our baseline. The proposed method accomplishes effective detection performance and outperforms all the baselines in all the settings. We also show the neural vocoder adopted in the detection framework is dataset independent.
-	</div>
+    </div>
 
     <div><h2>Audio Samples</h2></div>
-
+	
     <div>
 		<h3>Adversarial Audio Demo</h3>
 		<table><tbody>
+			<b>
+				<tr>
+					<td>Mean: origin: wer = 0%(ASR), uer = 0%(ASR), per = 0%(PR) </td>
+					<td>attacked: wer = 60%(ASR), uer = 30%(ASR), per = 54%(PR) </td>
+					<td>perturbation: nsr = 0.97% </td>
+				</tr>
+			</b>
 
-			<tr><td>1. clean audio, eer = 2.88%(wo vocoder), eer = 3.39%(w vocoder) </td></tr>
 			<tr>
-				<td><strong>without vocoder</strong></td>
-				<td><strong>with vocoder</strong></td>
+				<td>1. origin: wer = 0%(ASR), uer = 0%(ASR), per = 0%(PR) </td>
+				<td>attacked: wer = 46%(ASR), uer = 16%(ASR), per = 20%(PR) </td>
+				<td>perturbation: nsr = 0.65% </td>
 			</tr>
 			<tr>
-				<td><audio controls="" class="audio4"><source src="wavs/clean_36_0.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="wavs/clean_vocoder_36_0.wav"></audio></td>
+				<td><strong>origin</strong></td>
+				<td><strong>attacked</strong></td>
+				<td><strong>perturbation</strong></td>
 			</tr>
 			<tr>
-				<td><audio controls="" class="audio4"><source src="wavs/clean_3542_1.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="wavs/clean_vocoder_3542_1.wav"></audio></td>
-			</tr>
-			<tr>
-				<td><audio controls="" class="audio4"><source src="wavs/clean_83_2.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="wavs/clean_vocoder_83_2.wav"></audio></td>
+				<td><audio controls="" class="audio4"><source src="results/61-70968-0020-origin.wav"></audio></td>
+				<td><audio controls="" class="audio4"><source src="results/61-70968-0020-attacked.wav"></audio></td>
+				<td><audio controls="" class="audio4"><source src="results/61-70968-0020-perturbation.wav"></audio></td>
 			</tr>
 			
-			<tr><td>2. epsilon=5, eer = 74.04%(wo vocoder), eer = 30.37%(w vocoder) </td></tr>
 			<tr>
-				<td><strong>without vocoder</strong></td>
-				<td><strong>with vocoder</strong></td>
+				<td>2. origin: wer = 0%(ASR), uer = 0%(ASR), per = 0%(PR) </td>
+				<td>attacked: wer = 44%(ASR), uer = 12%(ASR), per = 22%(PR) </td>
+				<td>perturbation: nsr = 1.31% </td>
 			</tr>
 			<tr>
-				<td><audio controls="" class="audio4"><source src="wavs/adv_ep5_00000000.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="wavs/adv_ep5_vocoder_00000000.wav"></audio></td>
+				<td><strong>origin</strong></td>
+				<td><strong>attacked</strong></td>
+				<td><strong>perturbation</strong></td>
 			</tr>
 			<tr>
-				<td><audio controls="" class="audio4"><source src="wavs/adv_ep5_00000001.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="wavs/adv_ep5_vocoder_00000001.wav"></audio></td>
-			</tr>
-			<tr>
-				<td><audio controls="" class="audio4"><source src="wavs/adv_ep5_00000002.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="wavs/adv_ep5_vocoder_00000002.wav"></audio></td>
+				<td><audio controls="" class="audio4"><source src="results/4446-2273-0023-origin.wav"></audio></td>
+				<td><audio controls="" class="audio4"><source src="results/4446-2273-0023-attacked.wav"></audio></td>
+				<td><audio controls="" class="audio4"><source src="results/4446-2273-0023-perturbation.wav"></audio></td>
 			</tr>
 			
-			<tr><td>3. epsilon=10, eer = 90.57%(wo vocoder), eer = 52.50%(w vocoder) </td></tr>
 			<tr>
-				<td><strong>without vocoder</strong></td>
-				<td><strong>with vocoder</strong></td>
+				<td>3. origin: wer = 0%(ASR), uer = 0%(ASR), per = 0%(PR) </td>
+				<td>attacked: wer = 115%(ASR), uer = 83%(ASR), per = 120%(PR) </td>
+				<td>perturbation: nsr = 0.88% </td>
 			</tr>
 			<tr>
-				<td><audio controls="" class="audio4"><source src="wavs/adv_ep10_00000000.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="wavs/adv_ep10_vocoder_00000000.wav"></audio></td>
+				<td><strong>origin</strong></td>
+				<td><strong>attacked</strong></td>
+				<td><strong>perturbation</strong></td>
 			</tr>
 			<tr>
-				<td><audio controls="" class="audio4"><source src="wavs/adv_ep10_00000001.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="wavs/adv_ep10_vocoder_00000001.wav"></audio></td>
-			</tr>
-			<tr>
-				<td><audio controls="" class="audio4"><source src="wavs/adv_ep10_00000002.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="wavs/adv_ep10_vocoder_00000002.wav"></audio></td>
-			</tr>
-			
-			<tr><td>4. epsilon=15, eer = 95.66%(wo vocoder), eer = 65.75%(w vocoder) </td></tr>
-			<tr>
-				<td><strong>without vocoder</strong></td>
-				<td><strong>with vocoder</strong></td>
-			</tr>
-			<tr>
-				<td><audio controls="" class="audio4"><source src="wavs/adv_ep15_00000000.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="wavs/adv_ep15_vocoder_00000000.wav"></audio></td>
-			</tr>
-			<tr>
-				<td><audio controls="" class="audio4"><source src="wavs/adv_ep15_00000001.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="wavs/adv_ep15_vocoder_00000001.wav"></audio></td>
-			</tr>
-			<tr>
-				<td><audio controls="" class="audio4"><source src="wavs/adv_ep15_00000002.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="wavs/adv_ep15_vocoder_00000002.wav"></audio></td>
-			</tr>
-			
-			<tr><td>5. epsilon=20, eer = 99.33%(wo vocoder), eer = 87.58%(w vocoder) </td></tr>
-			<tr>
-				<td><strong>without vocoder</strong></td>
-				<td><strong>with vocoder</strong></td>
-			</tr>
-			<tr>
-				<td><audio controls="" class="audio4"><source src="wavs/adv_ep20_00000000.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="wavs/adv_ep20_vocoder_00000000.wav"></audio></td>
-			</tr>
-			<tr>
-				<td><audio controls="" class="audio4"><source src="wavs/adv_ep20_00000001.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="wavs/adv_ep20_vocoder_00000001.wav"></audio></td>
-			</tr>
-			<tr>
-				<td><audio controls="" class="audio4"><source src="wavs/adv_ep20_00000002.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="wavs/adv_ep20_vocoder_00000002.wav"></audio></td>
+				<td><audio controls="" class="audio4"><source src="results/1995-1826-0019-origin.wav"></audio></td>
+				<td><audio controls="" class="audio4"><source src="results/1995-1826-0019-attacked.wav"></audio></td>
+				<td><audio controls="" class="audio4"><source src="results/1995-1826-0019-perturbation.wav"></audio></td>
 			</tr>
             
         </tbody></table>
