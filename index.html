@@ -9,16 +9,17 @@
 
     <article>
 	  <header>
-		<h1>Adversarial samples for ASR and PR by attacking upstream</h1>
+		<h1>Adversarial samples by attacking upstream</h1>
 	  </header>
 	</article>
     </div>
 
-    <div><h2>Adversarial Audio Demo</h2></div>
+	<br>
+    <div><h2>ASR & PR</h2></div>
 	
     <div>
 		<br>
-		<h3>Parameters of Generating Adversarial Sample</h3>
+		<h3>Parameters of Generating Adversarial Sample:</h3>
 		<h3>n_iters = 200, eps = 0.0005, alpha = 0.000005</h3>
 		<br>
 		<h3>Mean of 100 Samples:</h3>
@@ -27,6 +28,72 @@
 		<h3>Perturbation: nsr = 0.97%</h3>
 		<br>
 		<table><tbody>
+
+			<tr>
+				<td><strong>origin</strong></td>
+				<td><strong>attacked</strong></td>
+				<td><strong>perturbation</strong></td>
+			</tr>
+			<tr>
+				<td>wer = 0%, uer = 0%, per = 0% </td>
+				<td>wer = 46%, uer = 16%, per = 20% </td>
+				<td>nsr = 0.65% </td>
+			</tr>
+			<tr>
+				<td><audio controls="" class="audio4"><source src="ASR+PR/61-70968-0020-origin.wav"></audio></td>
+				<td><audio controls="" class="audio4"><source src="ASR+PR/61-70968-0020-attacked.wav"></audio></td>
+				<td><audio controls="" class="audio4"><source src="ASR+PR/61-70968-0020-perturbation.wav"></audio></td>
+			</tr>
+			
+				<td>wer = 0%, uer = 0%, per = 0% </td>
+				<td>wer = 44%, uer = 12%, per = 22% </td>
+				<td>nsr = 1.31% </td>
+			</tr>
+			<tr>
+				<td><audio controls="" class="audio4"><source src="ASR+PR/4446-2273-0023-origin.wav"></audio></td>
+				<td><audio controls="" class="audio4"><source src="ASR+PR/4446-2273-0023-attacked.wav"></audio></td>
+				<td><audio controls="" class="audio4"><source src="ASR+PR/4446-2273-0023-perturbation.wav"></audio></td>
+			</tr>
+					
+			<tr>
+				<td>wer = 0%, uer = 0%, per = 0% </td>
+				<td>wer = 115%, uer = 83%, per = 120% </td>
+				<td>nsr = 0.88% </td>
+			</tr>
+			<tr>
+				<td><audio controls="" class="audio4"><source src="ASR+PR/1995-1826-0019-origin.wav"></audio></td>
+				<td><audio controls="" class="audio4"><source src="ASR+PR/1995-1826-0019-attacked.wav"></audio></td>
+				<td><audio controls="" class="audio4"><source src="ASR+PR/1995-1826-0019-perturbation.wav"></audio></td>
+			</tr>
+            
+        </tbody></table>
+    </div><br>
+
+
+	<br>
+    <div><h2>SID & ASV</h2></div>
+	
+    <div>
+		<br>
+		<h3>Parameters of Generating Adversarial Sample:</h3>
+		<h3>n_iters = 200, eps = 0.0005, alpha = 0.000005</h3>
+		<br>
+		<h3>Mean of Samples:</h3>
+		<table><tbody>
+			<tr>
+				<td>
+					<h3>For SID(66 samples):</h3>
+					<h3>Origin: acc = 100%, loss = 0.20</h3>
+					<h3>Attacked: acc = 27%, loss = 7.70, aer = 0.78(adversarial embedding rate)</h3>
+					<h3>Perturbation: nsr = 1.76%</h3>
+				</td>
+				<td>
+					<h3>For ASV(100 samples):</h3>
+					<h3>Origin: acc = 100%</h3>
+					<h3>Attacked: acc = 80%, d_score = 0.104, aer = 0.68</h3>
+					<h3>Perturbation: nsr = 1.55%</h3>
+				</td>
+			</tr>
 
 			<tr>
 				<td><strong>origin</strong></td>
