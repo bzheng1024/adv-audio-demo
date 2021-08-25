@@ -6,5 +6,7 @@ SID+ASV/*
 !SID+ASV/BEST/
 ER/*
 !ER/BEST/
+SD/*
+!SD/BEST/
 temp/
 test/
