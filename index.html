@@ -20,54 +20,78 @@
     <div>
 		<br>
 		<h3>Parameters of Generating Adversarial Sample:</h3>
-		<h3>n_iters = 200, eps = 0.0005, alpha = 0.000005</h3>
+		<h3>n_iters = 100, eps = 0.0005, sigma = 0.00045</h3>
 		<br>
-		<h3>Mean of 100 Samples:</h3>
-		<h3>Origin: wer = 0%(ASR), uer = 0%(ASR), per = 0%(PR)</h3>
-		<h3>Attacked: wer = 60%(ASR), uer = 30%(ASR), per = 54%(PR)</h3>
-		<h3>Perturbation: nsr = 0.97%</h3>
+		<table>
+			<thead>
+				<tr>
+					<th>ASR</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td></td>
+					<td>w2v2-w2v2</td>
+					<td>hubert-hubert</td>
+					<td>w2v2-hubert</td>
+					<td>hubert-w2v2</td>
+					<td>gau-w2v2</td>
+					<td>gau-hubert</td>
+				</tr>
+				<tr>
+					<td>wer</td>
+					<td>36.66</td>
+					<td>58.79</td>
+					<td>2.5</td>
+					<td>8.73</td>
+					<td>0.54</td>
+					<td>0</td>
+				</tr>
+				<tr>
+					<td>nsr</td>
+					<td>0.82</td>
+					<td>0.85</td>
+					<td>0.82</td>
+					<td>0.85</td>
+					<td>0.92</td>
+					<td>0.92</td>
+				</tr>
+				<tr>
+					<td>aer</td>
+					<td>90.06</td>
+					<td>83.27</td>
+					<td>44.24</td>
+					<td>61.33</td>
+					<td>34.54</td>
+					<td>22.31</td>
+				</tr>
+			</tbody>
+		</table>
 		<br>
-		<table><tbody>
-
-			<tr>
-				<td><strong>origin</strong></td>
-				<td><strong>attacked</strong></td>
-				<td><strong>perturbation</strong></td>
-			</tr>
-			<tr>
-				<td>wer = 0%, uer = 0%, per = 0% </td>
-				<td>wer = 46%, uer = 16%, per = 20% </td>
-				<td>nsr = 0.65% </td>
-			</tr>
-			<tr>
-				<td><audio controls="" class="audio4"><source src="ASR+PR/61-70968-0020-origin.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="ASR+PR/61-70968-0020-attacked.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="ASR+PR/61-70968-0020-perturbation.wav"></audio></td>
-			</tr>
-
-			<tr>
-				<td>wer = 0%, uer = 0%, per = 0% </td>
-				<td>wer = 44%, uer = 12%, per = 22% </td>
-				<td>nsr = 1.31% </td>
-			</tr>
-			<tr>
-				<td><audio controls="" class="audio4"><source src="ASR+PR/4446-2273-0023-origin.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="ASR+PR/4446-2273-0023-attacked.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="ASR+PR/4446-2273-0023-perturbation.wav"></audio></td>
-			</tr>
-					
-			<tr>
-				<td>wer = 0%, uer = 0%, per = 0% </td>
-				<td>wer = 115%, uer = 83%, per = 120% </td>
-				<td>nsr = 0.88% </td>
-			</tr>
-			<tr>
-				<td><audio controls="" class="audio4"><source src="ASR+PR/1995-1826-0019-origin.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="ASR+PR/1995-1826-0019-attacked.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="ASR+PR/1995-1826-0019-perturbation.wav"></audio></td>
-			</tr>
-            
-        </tbody></table>
+		<table>
+			<thead>
+				<tr>
+					<th>hubert</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><strong>Clean</strong></td>
+					<td><strong>IFGM</strong></td>
+					<td><strong>Gaussian</strong></td>
+				</tr>
+				<tr>
+					<td><audio controls="" class="audio4"><source src="ASR_PR/hubert/ASR/61-70970-0006_Clean.wav"></audio></td>
+					<td><audio controls="" class="audio4"><source src="ASR_PR/hubert/ASR/61-70970-0006_IFGM.wav"></audio></td>
+					<td><audio controls="" class="audio4"><source src="ASR_PR/hubert/ASR/61-70970-0006_Gaussian.wav"></audio></td>
+				</tr>
+				<tr>
+					<td><audio controls="" class="audio4"><source src="ASR_PR/hubert/ASR/121-127105-0014_Clean.wav"></audio></td>
+					<td><audio controls="" class="audio4"><source src="ASR_PR/hubert/ASR/121-127105-0014_IFGM.wav"></audio></td>
+					<td><audio controls="" class="audio4"><source src="ASR_PR/hubert/ASR/121-127105-0014_Gaussian.wav"></audio></td>
+				</tr>
+        	</tbody>
+		</table>
     </div><br>
 
 
