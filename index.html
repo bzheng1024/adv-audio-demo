@@ -9,14 +9,13 @@
 
     <article>
 	  <header>
-		<h1>Adversarial samples by attacking upstream</h1>
+		<h1>Adversarial samples</h1>
 	  </header>
 	</article>
     </div>
 
 	<br>
     <div><h2>ASR & PR</h2></div>
-	
     <div>
 		<br>
 		<h3>Parameters of Generating Adversarial Sample:</h3>
@@ -125,472 +124,394 @@
 		</table>
     </div><br>
 
-
-	<br>
-    <div><h2>SID & ASV</h2></div>
-	
-    <div>
-		<br>
-		<h3>Parameters of Generating Adversarial Sample:</h3>
-		<h3>n_iters = 100, eps = 0.0002, alpha = 0.000004</h3>
-		<br>
-		<h3>Mean of Samples:</h3>
-		<table><tbody>
-			<tr>
-				<td>
-					<h3>SID (72 samples):</h3>
-					<strong>Origin:</strong> acc = 100%, loss = 0.17<br>
-					<strong>Attacked:</strong> acc = 58%, loss = 1.70, aer = 0.51<br>
-					<strong>Perturbation:</strong> nsr = 0.78%<br>
-					<strong>Gaussian:</strong> acc = 100%, loss = 0.17, aer = 0.02<br>
-				</td>
-				<td>
-					<h3>ASV (50 targeted sample & 50 nontargeted sample with threshold 0.47):</h3>
-					<strong>Origin:</strong> acc = 100%<br>
-					<strong>Attacked:</strong> acc = 85%, d_score = 0.098, aer = 0.46<br>
-					<strong>Perturbation:</strong> nsr = 0.71%<br>
-					<strong>Gaussian:</strong> acc = 98%, d_score = 0.001, aer = 0.02<br>
-				</td>
-			</tr>
-		</tbody></table>
-		<br>
-		<table><tbody>
-			<tr>
-				<td><strong>origin</strong></td>
-				<td><strong>attacked (succeed in both SID & ASV)</strong></td>
-				<td><strong>perturbation</strong></td>
-				<td><strong>gaussian</strong></td>
-			</tr>
-			<tr>
-				<td>SID: loss = 0.0005 </td>
-				<td>SID: loss = 6.60, aer = 0.68</td>
-				<td>SID: nsr = 1.03% </td>
-				<td>SID: loss = 0.0005, aer = 0.03</td>
-			</tr>
-			<tr>
-				<td></td>
-				<td>ASV: d_score = 0.225, aer = 0.65</td>
-				<td>ASV: nsr = 1.03% </td>
-				<td>ASV: d_score = 0.0002, aer = 0.03</td>
-			</tr>
-			<tr>
-				<td><audio controls="" class="audio4"><source src="SID+ASV/BEST/id10270~x6uYqmx31kE~00004-origin.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="SID+ASV/BEST/id10270~x6uYqmx31kE~00004-attacked.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="SID+ASV/BEST/id10270~x6uYqmx31kE~00004-perturbation.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="SID+ASV/BEST/id10270~x6uYqmx31kE~00004-gaussian.wav"></audio></td>
-			</tr>
-
-			<tr>
-				<td><strong>origin</strong></td>
-				<td><strong>attacked (succeed in both SID & ASV)</strong></td>
-				<td><strong>perturbation</strong></td>
-				<td><strong>gaussian</strong></td>
-			</tr>
-			<tr>
-				<td>SID: loss = 0.187</td>
-				<td>SID: loss = 1.38, aer = 0.38</td>
-				<td>SID: nsr = 0.60% </td>
-				<td>SID: loss = 0.182, aer = 0.01</td>
-			</tr>
-			<tr>
-				<td></td>
-				<td>ASV: d_score = 0.156, aer = 0.33</td>
-				<td>ASV: nsr = 0.60% </td>
-				<td>ASV: d_score = 0.0008, aer = 0.01</td>
-			</tr>
-			<tr>
-				<td><audio controls="" class="audio4"><source src="SID+ASV/BEST/id10274~wH6ebv-K8AA~00004-origin.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="SID+ASV/BEST/id10274~wH6ebv-K8AA~00004-attacked.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="SID+ASV/BEST/id10274~wH6ebv-K8AA~00004-perturbation.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="SID+ASV/BEST/id10274~wH6ebv-K8AA~00004-gaussian.wav"></audio></td>
-			</tr>
-
-			<tr>
-				<td><strong>origin</strong></td>
-				<td><strong>attacked (succeed in both SID & ASV)</strong></td>
-				<td><strong>perturbation</strong></td>
-				<td><strong>gaussian</strong></td>
-			</tr>
-			<tr>
-				<td>SID: loss = 0.033</td>
-				<td>SID: loss = 3.41, aer = 0.49</td>
-				<td>SID: nsr = 0.68% </td>
-				<td>SID: loss = 0.035, aer = 0.01</td>
-			</tr>
-			<tr>
-				<td></td>
-				<td>ASV: d_score = 0.249, aer = 0.45</td>
-				<td>ASV: nsr = 0.68% </td>
-				<td>ASV: d_score = 0.002, aer = 0.01</td>
-			</tr>
-			<tr>
-				<td><audio controls="" class="audio4"><source src="SID+ASV/BEST/id10271~gO805KoL2RM~00004-origin.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="SID+ASV/BEST/id10271~gO805KoL2RM~00004-attacked.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="SID+ASV/BEST/id10271~gO805KoL2RM~00004-perturbation.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="SID+ASV/BEST/id10271~gO805KoL2RM~00004-gaussian.wav"></audio></td>
-			</tr>
-            
-			<tr>
-				<td><strong>origin</strong></td>
-				<td><strong>attacked (only succeed in SID)</strong></td>
-				<td><strong>perturbation</strong></td>
-				<td><strong>gaussian</strong></td>
-			</tr>
-			<tr>
-				<td>SID: loss = 0.00007</td>
-				<td>SID: loss = 0.82, aer = 0.58</td>
-				<td>SID: nsr = 0.40% </td>
-				<td>SID: loss = 0.00008, aer = 0.04</td>
-			</tr>
-			<tr>
-				<td></td>
-				<td>ASV: d_score = 0.061, aer = 0.55</td>
-				<td>ASV: nsr = 0.40% </td>
-				<td>ASV: d_score = 0.0002, aer = 0.04</td>
-			</tr>
-			<tr>
-				<td><audio controls="" class="audio4"><source src="SID+ASV/BEST/id10294~a4msZPEjhMc~00002-origin.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="SID+ASV/BEST/id10294~a4msZPEjhMc~00002-attacked.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="SID+ASV/BEST/id10294~a4msZPEjhMc~00002-perturbation.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="SID+ASV/BEST/id10294~a4msZPEjhMc~00002-gaussian.wav"></audio></td>
-			</tr>
-
-			<tr>
-				<td><strong>origin</strong></td>
-				<td><strong>attacked (only succeed in SID)</strong></td>
-				<td><strong>perturbation</strong></td>
-				<td><strong>gaussian</strong></td>
-			</tr>
-			<tr>
-				<td>SID: loss = 0.482</td>
-				<td>SID: loss = 2.06, aer = 0.27</td>
-				<td>SID: nsr = 0.21% </td>
-				<td>SID: loss = 0.489, aer = 0.01</td>
-			</tr>
-			<tr>
-				<td></td>
-				<td>ASV: d_score = 0.001, aer = 0.23</td>
-				<td>ASV: nsr = 0.21% </td>
-				<td>ASV: d_score = 0.0001, aer = 0.01</td>
-			</tr>
-			<tr>
-				<td><audio controls="" class="audio4"><source src="SID+ASV/BEST/id10306~WOjNZFtRwDg~00004-origin.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="SID+ASV/BEST/id10306~WOjNZFtRwDg~00004-attacked.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="SID+ASV/BEST/id10306~WOjNZFtRwDg~00004-perturbation.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="SID+ASV/BEST/id10306~WOjNZFtRwDg~00004-gaussian.wav"></audio></td>
-			</tr>
-
-			<tr>
-				<td><strong>origin</strong></td>
-				<td><strong>attacked (only succeed in ASV)</strong></td>
-				<td><strong>perturbation</strong></td>
-				<td><strong>gaussian</strong></td>
-			</tr>
-			<tr>
-				<td>SID: loss = 0.001</td>
-				<td>SID: loss = 0.08, aer = 0.49</td>
-				<td>SID: nsr = 0.60% </td>
-				<td>SID: loss = 0.001, aer = 0.02</td>
-			</tr>
-			<tr>
-				<td></td>
-				<td>ASV: d_score = 0.102, aer = 0.45</td>
-				<td>ASV: nsr = 0.60% </td>
-				<td>ASV: d_score = 0.001, aer = 0.02</td>
-			</tr>
-			<tr>
-				<td><audio controls="" class="audio4"><source src="SID+ASV/BEST/id10271~gO805KoL2RM~00002-origin.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="SID+ASV/BEST/id10271~gO805KoL2RM~00002-attacked.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="SID+ASV/BEST/id10271~gO805KoL2RM~00002-perturbation.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="SID+ASV/BEST/id10271~gO805KoL2RM~00002-gaussian.wav"></audio></td>
-			</tr>
-        </tbody></table>
-    </div><br>
-
 	<br>
     <div><h2>KS</h2></div>
-	
     <div>
 		<br>
 		<h3>Parameters of Generating Adversarial Sample:</h3>
-		<h3>n_iters = 200, eps = 0.0003, alpha = 0.000003</h3>
+		<h3>n_iters = 100, eps = 0.0005, sigma = 0.0005</h3>
 		<br>
-		<h3>Mean of 100 Samples:</h3>
-		<h3>Origin: acc = 100%, loss = 0.038</h3>
-		<h3>Attacked: acc = 58.6%, loss = 1.67, aer = 1.12</h3>
-		<h3>Perturbation: nsr = 0.92%</h3>
+		<table border="1" cellspacing="0" cellpadding="0">
+			<tbody>
+				<tr><td><strong>KS</strong></td><td>w2v2-w2v2</td><td>hubert-hubert</td><td>w2v2-hubert</td><td>hubert-w2v2</td><td>gau-w2v2</td><td>gau-hubert</td></tr>
+				<tr><td>acc</td><td>61</td><td>64</td><td>97</td><td>94</td><td>97</td><td>99</td></tr>
+				<tr><td>nsr</td><td>41.26</td><td>41.26</td><td>41.26</td><td>41.26</td><td>41.31</td><td>41.31</td></tr>
+				<tr><td>aer</td><td>104.32</td><td>98.22</td><td>48.07</td><td>75.18</td><td>59.18</td><td>31.14</td></tr>
+			</tbody>
+		</table>
 		<br>
-		<table><tbody>
-
-			<tr>
-				<td><strong>origin</strong></td>
-				<td><strong>attacked</strong></td>
-				<td><strong>perturbation</strong></td>
-			</tr>
-			<tr>
-				<td>acc = 100%, loss = 0.001 </td>
-				<td>acc = 0%, loss = 5.85, aer = 1.36 </td>
-				<td>nsr = 0.96% </td>
-			</tr>
-			<tr>
-				<td><audio controls="" class="audio4"><source src="KS/off_0cb74144_nohash_4-origin.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="KS/off_0cb74144_nohash_4-attacked.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="KS/off_0cb74144_nohash_4-perturbation.wav"></audio></td>
-			</tr>
-
-			<tr>
-				<td>acc = 100%, loss = 0.002 </td>
-				<td>acc = 0%, loss = 2.09, aer = 1.30 </td>
-				<td>nsr = 0.35% </td>
-			</tr>
-			<tr>
-				<td><audio controls="" class="audio4"><source src="KS/go_ca4d5368_nohash_2-origin.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="KS/go_ca4d5368_nohash_2-attacked.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="KS/go_ca4d5368_nohash_2-perturbation.wav"></audio></td>
-			</tr>
-					
-			<tr>
-				<td>acc = 100%, loss = 0 </td>
-				<td>acc = 0%, loss = 2.59, aer = 1.41 </td>
-				<td>nsr = 1.91% </td>
-			</tr>
-			<tr>
-				<td><audio controls="" class="audio4"><source src="KS/stop_ea356919_nohash_0-origin.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="KS/stop_ea356919_nohash_0-attacked.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="KS/stop_ea356919_nohash_0-perturbation.wav"></audio></td>
-			</tr>
-            
-        </tbody></table>
+		<h3>HUBERT</h3>
+		<table>
+			<tbody>
+				<tr>
+					<td><strong>Clean</strong></td>
+					<td><strong>IFGM</strong></td>
+					<td><strong>Gaussian</strong></td>
+				</tr>
+				<tr>
+					<td><audio controls="" class="audio4"><source src="KS/hubert/stop_f9643d42_nohash_1_Clean.wav"></audio></td>
+					<td><audio controls="" class="audio4"><source src="KS/hubert/stop_f9643d42_nohash_1_IFGM.wav"></audio></td>
+					<td><audio controls="" class="audio4"><source src="KS/hubert/stop_f9643d42_nohash_1_Gaussian.wav"></audio></td>
+				</tr>
+				<tr>
+					<td><audio controls="" class="audio4"><source src="KS/hubert/yes_e71b4ce6_nohash_0_Clean.wav"></audio></td>
+					<td><audio controls="" class="audio4"><source src="KS/hubert/yes_e71b4ce6_nohash_0_IFGM.wav"></audio></td>
+					<td><audio controls="" class="audio4"><source src="KS/hubert/yes_e71b4ce6_nohash_0_Gaussian.wav"></audio></td>
+				</tr>
+        	</tbody>
+		</table>
+		<br>
+		<h3>WAV2VEC</h3>
+		<table>
+			<tbody>
+				<tr>
+					<td><strong>Clean</strong></td>
+					<td><strong>IFGM</strong></td>
+					<td><strong>Gaussian</strong></td>
+				</tr>
+				<tr>
+					<td><audio controls="" class="audio4"><source src="KS/hubert/stop_f9643d42_nohash_1_Clean.wav"></audio></td>
+					<td><audio controls="" class="audio4"><source src="KS/wav2vec/stop_f9643d42_nohash_1_IFGM.wav"></audio></td>
+					<td><audio controls="" class="audio4"><source src="KS/hubert/stop_f9643d42_nohash_1_Gaussian.wav"></audio></td>
+				</tr>
+				<tr>
+					<td><audio controls="" class="audio4"><source src="KS/hubert/yes_e71b4ce6_nohash_0_Clean.wav"></audio></td>
+					<td><audio controls="" class="audio4"><source src="KS/wav2vec/yes_e71b4ce6_nohash_0_IFGM.wav"></audio></td>
+					<td><audio controls="" class="audio4"><source src="KS/hubert/yes_e71b4ce6_nohash_0_Gaussian.wav"></audio></td>
+				</tr>
+        	</tbody>
+		</table>
     </div><br>
 
 	<br>
     <div><h2>IC</h2></div>
-	
     <div>
 		<br>
 		<h3>Parameters of Generating Adversarial Sample:</h3>
-		<h3>n_iters = 200, eps = 0.0003, alpha = 0.000003</h3>
+		<h3>n_iters = 100, eps = 0.0005, sigma = 0.0004</h3>
 		<br>
-		<h3>Mean of 100 Samples:</h3>
-		<h3>Origin: acc = 100%, loss = 0.057</h3>
-		<h3>Attacked: acc = 41.4%, loss = 5.08, aer = 1.12</h3>
-		<h3>Perturbation: nsr = 0.45%</h3>
+		<table border="1" cellspacing="0" cellpadding="0">
+			<tbody>
+				<tr><td><strong>IC</strong></td><td>w2v2-w2v2</td><td>hubert-hubert</td><td>w2v2-hubert</td><td>hubert-w2v2</td><td>gau-w2v2</td><td>gau-hubert</td></tr>
+				<tr><td>acc</td><td>52</td><td>61</td><td>98</td><td>83</td><td>95</td><td>99</td></tr>
+				<tr><td>nsr</td><td>0.54</td><td>0.6</td><td>0.54</td><td>0.6</td><td>0.64</td><td>0.64</td></tr>
+				<tr><td>aer</td><td>103.29</td><td>92.49</td><td>48.77</td><td>71.15</td><td>43.42</td><td>26.99</td></tr>
+			</tbody>
+		</table>
 		<br>
-		<table><tbody>
-
-			<tr>
-				<td><strong>origin</strong></td>
-				<td><strong>attacked</strong></td>
-				<td><strong>perturbation</strong></td>
-			</tr>
-			<tr>
-				<td>acc = 100%, loss = 0.33 </td>
-				<td>acc = 0%, loss = 3.17, aer = 0.91 </td>
-				<td>nsr = 0.29% </td>
-			</tr>
-			<tr>
-				<td><audio controls="" class="audio4"><source src="IC/32f4e340-origin.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="IC/32f4e340-attacked.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="IC/32f4e340-perturbation.wav"></audio></td>
-			</tr>
-
-			<tr>
-				<td>acc = 100%, loss = 0.95 </td>
-				<td>acc = 0%, loss = 8.41, aer = 1.39 </td>
-				<td>nsr = 0.40% </td>
-			</tr>
-			<tr>
-				<td><audio controls="" class="audio4"><source src="IC/135ae740-origin.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="IC/135ae740-attacked.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="IC/135ae740-perturbation.wav"></audio></td>
-			</tr>
-					
-			<tr>
-				<td>acc = 100%, loss = 0.0002 </td>
-				<td>acc = 0%, loss = 3.47, aer = 0.98 </td>
-				<td>nsr = 0.30% </td>
-			</tr>
-			<tr>
-				<td><audio controls="" class="audio4"><source src="IC/c2859e70-origin.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="IC/c2859e70-attacked.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="IC/c2859e70-perturbation.wav"></audio></td>
-			</tr>
-            
-        </tbody></table>
+		<h3>HUBERT</h3>
+		<table>
+			<tbody>
+				<tr>
+					<td><strong>Clean</strong></td><td><strong>IFGM</strong></td><td><strong>Gaussian</strong></td>
+				</tr>
+				<tr>
+					<td><audio controls="" class="audio4"><source src="IC/hubert/0df84490_Clean.wav"></audio></td>
+					<td><audio controls="" class="audio4"><source src="IC/hubert/0df84490_IFGM.wav"></audio></td>
+					<td><audio controls="" class="audio4"><source src="IC/hubert/0df84490_Gaussian.wav"></audio></td>
+				</tr>
+				<tr>
+					<td><audio controls="" class="audio4"><source src="IC/hubert/0ecd3f50_Clean.wav"></audio></td>
+					<td><audio controls="" class="audio4"><source src="IC/hubert/0ecd3f50_IFGM.wav"></audio></td>
+					<td><audio controls="" class="audio4"><source src="IC/hubert/0ecd3f50_Gaussian.wav"></audio></td>
+				</tr>
+        	</tbody>
+		</table>
+		<br>
+		<h3>WAV2VEC</h3>
+		<table>
+			<tbody>
+				<tr>
+					<td><strong>Clean</strong></td><td><strong>IFGM</strong></td><td><strong>Gaussian</strong></td>
+				</tr>
+				<tr>
+					<td><audio controls="" class="audio4"><source src="IC/hubert/0df84490_Clean.wav"></audio></td>
+					<td><audio controls="" class="audio4"><source src="IC/wav2vec/0df84490_IFGM.wav"></audio></td>
+					<td><audio controls="" class="audio4"><source src="IC/hubert/0df84490_Gaussian.wav"></audio></td>
+				</tr>
+				<tr>
+					<td><audio controls="" class="audio4"><source src="IC/hubert/0ecd3f50_Clean.wav"></audio></td>
+					<td><audio controls="" class="audio4"><source src="IC/wav2vec/0ecd3f50_IFGM.wav"></audio></td>
+					<td><audio controls="" class="audio4"><source src="IC/hubert/0ecd3f50_Gaussian.wav"></audio></td>
+				</tr>
+        	</tbody>
+		</table>
     </div><br>
 
 	<br>
     <div><h2>SF</h2></div>
-	
     <div>
 		<br>
 		<h3>Parameters of Generating Adversarial Sample:</h3>
-		<h3>n_iters = 200, eps = 0.0007, alpha = 0.000007</h3>
+		<h3>n_iters = 100, eps = 0.0007, sigma = 0.0005</h3>
 		<br>
-		<h3>Mean of 100 Samples:</h3>
-		<h3>Origin: f1 = 100%, cer = 0%</h3>
-		<h3>Attacked: f1 = 38.2%, cer = 75.7%, aer = 0.81</h3>
-		<h3>Perturbation: nsr = 0.94%</h3>
+		<table border="1" cellspacing="0" cellpadding="0">
+			<tbody>
+				<tr><td><strong>SF</strong></td><td>w2v2-w2v2</td><td>hubert-hubert</td><td>w2v2-hubert</td><td>hubert-w2v2</td><td>gau-w2v2</td><td>gau-hubert</td></tr>
+				<tr><td>F1</td><td>88.62</td><td>73.94</td><td>98.63</td><td>95.54</td><td>99.13</td><td>98.81</td></tr>
+				<tr><td>cer</td><td>18.47</td><td>36.75</td><td>2.22</td><td>9.31</td><td>1.61</td><td>1.47</td></tr>
+				<tr><td>nsr</td><td>0.66</td><td>0.71</td><td>0.66</td><td>0.71</td><td>0.71</td><td>0.71</td></tr>
+				<tr><td>aer</td><td>66.7</td><td>56.74</td><td>28.5</td><td>43.32</td><td>29.72</td><td>19.86</td></tr>
+			</tbody>
+		</table>
 		<br>
-		<table><tbody>
+		<h3>HUBERT</h3>
+		<table>
+			<tbody>
+				<tr>
+					<td><strong>Clean</strong></td><td><strong>IFGM</strong></td><td><strong>Gaussian</strong></td>
+				</tr>
+				<tr>
+					<td><audio controls="" class="audio4"><source src="SF/hubert/Brian-snips-test-43_Clean.wav"></audio></td>
+					<td><audio controls="" class="audio4"><source src="SF/hubert/Brian-snips-test-43_IFGM.wav"></audio></td>
+					<td><audio controls="" class="audio4"><source src="SF/hubert/Brian-snips-test-43_Gaussian.wav"></audio></td>
+				</tr>
+				<tr>
+					<td><audio controls="" class="audio4"><source src="SF/hubert/Emma-snips-test-35_Clean.wav"></audio></td>
+					<td><audio controls="" class="audio4"><source src="SF/hubert/Emma-snips-test-35_IFGM.wav"></audio></td>
+					<td><audio controls="" class="audio4"><source src="SF/hubert/Emma-snips-test-35_Gaussian.wav"></audio></td>
+				</tr>
+        	</tbody>
+		</table>
+		<br>
+		<h3>WAV2VEC</h3>
+		<table>
+			<tbody>
+				<tr>
+					<td><strong>Clean</strong></td><td><strong>IFGM</strong></td><td><strong>Gaussian</strong></td>
+				</tr>
+				<tr>
+					<td><audio controls="" class="audio4"><source src="SF/hubert/Brian-snips-test-43_Clean.wav"></audio></td>
+					<td><audio controls="" class="audio4"><source src="SF/wav2vec/Brian-snips-test-43_IFGM.wav"></audio></td>
+					<td><audio controls="" class="audio4"><source src="SF/hubert/Brian-snips-test-43_Gaussian.wav"></audio></td>
+				</tr>
+				<tr>
+					<td><audio controls="" class="audio4"><source src="SF/hubert/Emma-snips-test-35_Clean.wav"></audio></td>
+					<td><audio controls="" class="audio4"><source src="SF/wav2vec/Emma-snips-test-35_IFGM.wav"></audio></td>
+					<td><audio controls="" class="audio4"><source src="SF/hubert/Emma-snips-test-35_Gaussian.wav"></audio></td>
+				</tr>
+        	</tbody>
+		</table>
+    </div><br>
 
-			<tr>
-				<td><strong>origin</strong></td>
-				<td><strong>attacked</strong></td>
-				<td><strong>perturbation</strong></td>
-			</tr>
-			<tr>
-				<td>f1 = 100%, cer = 0% </td>
-				<td>f1 = 0%, cer = 100%, aer = 0.81 </td>
-				<td>nsr = 0.94% </td>
-			</tr>
-			<tr>
-				<td><audio controls="" class="audio4"><source src="SF/Brian-snips-test-208-origin.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="SF/Brian-snips-test-208-attacked.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="SF/Brian-snips-test-208-perturbation.wav"></audio></td>
-			</tr>
-
-			<tr>
-				<td>f1 = 100%, cer = 0% </td>
-				<td>f1 = 0%, cer = 100%, aer = 0.78 </td>
-				<td>nsr = 0.94% </td>
-			</tr>
-			<tr>
-				<td><audio controls="" class="audio4"><source src="SF/Russell-snips-test-643-origin.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="SF/Russell-snips-test-643-attacked.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="SF/Russell-snips-test-643-perturbation.wav"></audio></td>
-			</tr>
-					
-			<tr>
-				<td>f1 = 100%, cer = 0% </td>
-				<td>f1 = 75%, cer = 50%, aer = 0.81 </td>
-				<td>nsr = 0.96% </td>
-			</tr>
-			<tr>
-				<td><audio controls="" class="audio4"><source src="SF/Emma-snips-test-439-origin.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="SF/Emma-snips-test-439-attacked.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="SF/Emma-snips-test-439-perturbation.wav"></audio></td>
-			</tr>
-            
-        </tbody></table>
+	<br>
+    <div><h2>SID</h2></div>
+    <div>
+		<br>
+		<h3>Parameters of Generating Adversarial Sample:</h3>
+		<h3>n_iters = 100, eps = 0.0002, sigma = 0.00018</h3>
+		<br>
+		<table border="1" cellspacing="0" cellpadding="0">
+			<tbody>
+				<tr><td><strong>SID</strong></td><td>w2v2-w2v2</td><td>hubert-hubert</td><td>w2v2-hubert</td><td>hubert-w2v2</td><td>gau-w2v2</td><td>gau-hubert</td></tr>
+				<tr><td>acc</td><td>77</td><td>69</td><td>89</td><td>89</td><td>95</td><td>94</td></tr>
+				<tr><td>nsr</td><td>0.54</td><td>0.55</td><td>0.54</td><td>0.55</td><td>0.55</td><td>0.55</td></tr>
+				<tr><td>aer</td><td>40.7</td><td>43.6</td><td>26.2</td><td>30</td><td>9.6</td><td>7.2</td></tr>
+			</tbody>
+		</table>
+		<br>
+		<h3>HUBERT</h3>
+		<table>
+			<tbody>
+				<tr>
+					<td><strong>Clean</strong></td><td><strong>IFGM</strong></td><td><strong>Gaussian</strong></td>
+				</tr>
+				<tr>
+					<td><audio controls="" class="audio4"><source src="SID/hubert/id10064~w3I2cwv9Nn4~00007_Clean.wav"></audio></td>
+					<td><audio controls="" class="audio4"><source src="SID/hubert/id10064~w3I2cwv9Nn4~00007_IFGM.wav"></audio></td>
+					<td><audio controls="" class="audio4"><source src="SID/hubert/id10064~w3I2cwv9Nn4~00007_Gaussian.wav"></audio></td>
+				</tr>
+				<tr>
+					<td><audio controls="" class="audio4"><source src="SID/hubert/id10106~YuG9RqEfNl4~00002_Clean.wav"></audio></td>
+					<td><audio controls="" class="audio4"><source src="SID/hubert/id10106~YuG9RqEfNl4~00002_IFGM.wav"></audio></td>
+					<td><audio controls="" class="audio4"><source src="SID/hubert/id10106~YuG9RqEfNl4~00002_Gaussian.wav"></audio></td>
+				</tr>
+        	</tbody>
+		</table>
+		<br>
+		<h3>WAV2VEC</h3>
+		<table>
+			<tbody>
+				<tr>
+					<td><strong>Clean</strong></td><td><strong>IFGM</strong></td><td><strong>Gaussian</strong></td>
+				</tr>
+				<tr>
+					<td><audio controls="" class="audio4"><source src="SID/wav2vec/id10049~p5AJtU5gclc~00004_Clean.wav"></audio></td>
+					<td><audio controls="" class="audio4"><source src="SID/wav2vec/id10049~p5AJtU5gclc~00004_IFGM.wav"></audio></td>
+					<td><audio controls="" class="audio4"><source src="SID/wav2vec/id10049~p5AJtU5gclc~00004_Gaussian.wav"></audio></td>
+				</tr>
+				<tr>
+					<td><audio controls="" class="audio4"><source src="SID/wav2vec/id10392~Mmklviakbm4~00005_Clean.wav"></audio></td>
+					<td><audio controls="" class="audio4"><source src="SID/wav2vec/id10392~Mmklviakbm4~00005_IFGM.wav"></audio></td>
+					<td><audio controls="" class="audio4"><source src="SID/wav2vec/id10392~Mmklviakbm4~00005_Gaussian.wav"></audio></td>
+				</tr>
+        	</tbody>
+		</table>
     </div><br>
 
 	<br>
     <div><h2>ER</h2></div>
-	
     <div>
 		<br>
 		<h3>Parameters of Generating Adversarial Sample:</h3>
-		<h3>n_iters = 150, eps = 0.0002, alpha = 0.000002</h3>
+		<h3>n_iters = 100, eps = 0.0002, sigma = 0.00016</h3>
 		<br>
-		<h3>Mean of 100 Samples:</h3>
-		<h3>Origin: acc = 100%, loss = 0.172</h3>
-		<h3>Attacked: acc = 69%, loss = 0.835, aer = 0.70</h3>
-		<h3>Perturbation: nsr = 0.86%</h3>
+		<table border="1" cellspacing="0" cellpadding="0">
+			<tbody>
+				<tr><td><strong>ER</strong></td><td>w2v2-w2v2</td><td>hubert-hubert</td><td>w2v2-hubert</td><td>hubert-w2v2</td><td>gau-w2v2</td><td>gau-hubert</td></tr>
+				<tr><td>acc</td><td>75</td><td>74</td><td>91</td><td>93</td><td>97</td><td>100</td></tr>
+				<tr><td>nsr</td><td>0.59</td><td>0.6</td><td>0.59</td><td>0.6</td><td>0.61</td><td>0.61</td></tr>
+				<tr><td>aer</td><td>58.1</td><td>59</td><td>34.9</td><td>40.9</td><td>16.9</td><td>10.5</td></tr>
+			</tbody>
+		</table>
 		<br>
-		<table><tbody>
-
-			<tr>
-				<td><strong>origin</strong></td>
-				<td><strong>attacked</strong></td>
-				<td><strong>perturbation</strong></td>
-			</tr>
-			<tr>
-				<td>acc = 100%, loss = 1.15 </td>
-				<td>acc = 0%, loss = 4.77, aer = 0.57 </td>
-				<td>nsr = 0.40% </td>
-			</tr>
-			<tr>
-				<td><audio controls="" class="audio4"><source src="ER/BEST/Ses01M_impro05_F016-origin.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="ER/BEST/Ses01M_impro05_F016-attacked.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="ER/BEST/Ses01M_impro05_F016-perturbation.wav"></audio></td>
-			</tr>
-
-			<tr>
-				<td>acc = 100%, loss = 0.56 </td>
-				<td>acc = 0%, loss = 2.13, aer = 0.78 </td>
-				<td>nsr = 0.55% </td>
-			</tr>
-			<tr>
-				<td><audio controls="" class="audio4"><source src="ER/BEST/Ses01F_script02_2_M017-origin.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="ER/BEST/Ses01F_script02_2_M017-attacked.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="ER/BEST/Ses01F_script02_2_M017-perturbation.wav"></audio></td>
-			</tr>
-					
-			<tr>
-				<td>acc = 100%, loss = 0.40 </td>
-				<td>acc = 0%, loss = 8.69, aer = 0.96 </td>
-				<td>nsr = 0.85% </td>
-			</tr>
-			<tr>
-				<td><audio controls="" class="audio4"><source src="ER/BEST/Ses01F_script03_2_F005-origin.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="ER/BEST/Ses01F_script03_2_F005-attacked.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="ER/BEST/Ses01F_script03_2_F005-perturbation.wav"></audio></td>
-			</tr>
-            
-        </tbody></table>
+		<h3>HUBERT</h3>
+		<table>
+			<tbody>
+				<tr>
+					<td><strong>Clean</strong></td><td><strong>IFGM</strong></td><td><strong>Gaussian</strong></td>
+				</tr>
+				<tr>
+					<td><audio controls="" class="audio4"><source src="ER/hubert/Ses01F_impro05_M009_Clean.wav"></audio></td>
+					<td><audio controls="" class="audio4"><source src="ER/hubert/Ses01F_impro05_M009_IFGM.wav"></audio></td>
+					<td><audio controls="" class="audio4"><source src="ER/hubert/Ses01F_impro05_M009_Gaussian.wav"></audio></td>
+				</tr>
+				<tr>
+					<td><audio controls="" class="audio4"><source src="ER/hubert/Ses01M_impro05_F000_Clean.wav"></audio></td>
+					<td><audio controls="" class="audio4"><source src="ER/hubert/Ses01M_impro05_F000_IFGM.wav"></audio></td>
+					<td><audio controls="" class="audio4"><source src="ER/hubert/Ses01M_impro05_F000_Gaussian.wav"></audio></td>
+				</tr>
+        	</tbody>
+		</table>
+		<br>
+		<h3>WAV2VEC</h3>
+		<table>
+			<tbody>
+				<tr>
+					<td><strong>Clean</strong></td><td><strong>IFGM</strong></td><td><strong>Gaussian</strong></td>
+				</tr>
+				<tr>
+					<td><audio controls="" class="audio4"><source src="ER/wav2vec/Ses01F_impro03_M022_Clean.wav"></audio></td>
+					<td><audio controls="" class="audio4"><source src="ER/wav2vec/Ses01F_impro03_M022_IFGM.wav"></audio></td>
+					<td><audio controls="" class="audio4"><source src="ER/wav2vec/Ses01F_impro03_M022_Gaussian.wav"></audio></td>
+				</tr>
+				<tr>
+					<td><audio controls="" class="audio4"><source src="ER/wav2vec/Ses01M_script03_1_F017_Clean.wav"></audio></td>
+					<td><audio controls="" class="audio4"><source src="ER/wav2vec/Ses01M_script03_1_F017_IFGM.wav"></audio></td>
+					<td><audio controls="" class="audio4"><source src="ER/wav2vec/Ses01M_script03_1_F017_Gaussian.wav"></audio></td>
+				</tr>
+        	</tbody>
+		</table>
     </div><br>
 
 	<br>
     <div><h2>SD</h2></div>
-	
     <div>
 		<br>
 		<h3>Parameters of Generating Adversarial Sample:</h3>
-		<h3>n_iters = 200, eps = 0.001, alpha = 0.00001</h3>
+		<h3>n_iters = 100, eps = 0.001, sigma = 0.00075</h3>
 		<br>
-		<h3>Mean of 100 Samples:</h3>
-		<h3>Origin: acc = 98%, der = 2.9%</h3>
-		<h3>Attacked: acc = 78%, der = 33.4%, aer = 0.75</h3>
-		<h3>Perturbation: nsr = 1.98%</h3>
+		<table border="1" cellspacing="0" cellpadding="0">
+			<tbody>
+				<tr><td><strong>SD</strong></td><td>w2v2-w2v2</td><td>hubert-hubert</td><td>w2v2-hubert</td><td>hubert-w2v2</td><td>gau-w2v2</td><td>gau-hubert</td></tr>
+				<tr><td>acc</td><td>88.2</td><td>87.53</td><td>95.02</td><td>95.06</td><td>98.2</td><td>98.18</td></tr>
+				<tr><td>der</td><td>17.5</td><td>18.5</td><td>7.1</td><td>7.3</td><td>2.6</td><td>2.5</td></tr>
+				<tr><td>nsr</td><td>1.44</td><td>1.52</td><td>1.44</td><td>1.52</td><td>1.48</td><td>1.48</td></tr>
+				<tr><td>aer</td><td>53.7</td><td>53.7</td><td>33.1</td><td>37.1</td><td>6.2</td><td>8.5</td></tr>
+			</tbody>
+		</table>
 		<br>
-		<table><tbody>
-			<tr>
-				<td><strong>origin</strong></td>
-				<td><strong>attacked</strong></td>
-				<td><strong>perturbation</strong></td>
-				<td><strong>gaussian</strong></td>
-			</tr>
-			<tr>
-				<td>acc = 97%, der = 4.2% </td>
-				<td>acc = 74%, der = 42%, aer = 0.77</td>
-				<td>nsr = 1.86% </td>
-				<td>acc = 97%, der = 4.3%, aer = 0.05</td>
-			</tr>
-			<tr>
-				<td><audio controls="" class="audio4"><source src="SD/BEST/3575-170457-0022_2094-142345-0045-origin.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="SD/BEST/3575-170457-0022_2094-142345-0045-attacked.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="SD/BEST/3575-170457-0022_2094-142345-0045-perturbation.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="SD/BEST/3575-170457-0022_2094-142345-0045-gaussian.wav"></audio></td>
-			</tr>
-
-			<tr>
-				<td>acc = 99%, der = 1.8% </td>
-				<td>acc = 57%, der = 83%, aer = 0.77</td>
-				<td>nsr = 1.75% </td>
-				<td>acc = 99%, der = 2.6%, aer = 0.08</td>
-			</tr>
-			<tr>
-				<td><audio controls="" class="audio4"><source src="SD/BEST/61-70968-0060_3575-170457-0037-origin.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="SD/BEST/61-70968-0060_3575-170457-0037-attacked.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="SD/BEST/61-70968-0060_3575-170457-0037-perturbation.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="SD/BEST/61-70968-0060_3575-170457-0037-gaussian.wav"></audio></td>
-			</tr>
-
-			<tr>
-				<td>acc = 97%, der = 4.5% </td>
-				<td>acc = 68%, der = 52%, aer = 0.59</td>
-				<td>nsr = 1.73% </td>
-				<td>acc = 97%, der = 4.3%, aer = 0.04</td>
-			</tr>
-			<tr>
-				<td><audio controls="" class="audio4"><source src="SD/BEST/7127-75947-0038_8463-294828-0016-origin.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="SD/BEST/7127-75947-0038_8463-294828-0016-attacked.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="SD/BEST/7127-75947-0038_8463-294828-0016-perturbation.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="SD/BEST/7127-75947-0038_8463-294828-0016-gaussian.wav"></audio></td>
-			</tr>
-            
-        </tbody></table>
+		<h3>HUBERT</h3>
+		<table>
+			<tbody>
+				<tr>
+					<td><strong>Clean</strong></td><td><strong>IFGM</strong></td><td><strong>Gaussian</strong></td>
+				</tr>
+				<tr>
+					<td><audio controls="" class="audio4"><source src="SD/hubert/1089-134686-0000_61-70968-0047_Clean.wav"></audio></td>
+					<td><audio controls="" class="audio4"><source src="SD/hubert/1089-134686-0000_61-70968-0047_IFGM.wav"></audio></td>
+					<td><audio controls="" class="audio4"><source src="SD/hubert/1089-134686-0000_61-70968-0047_Gaussian.wav"></audio></td>
+				</tr>
+				<tr>
+					<td><audio controls="" class="audio4"><source src="SD/hubert/1320-122617-0021_6829-68771-0018_Clean.wav"></audio></td>
+					<td><audio controls="" class="audio4"><source src="SD/hubert/1320-122617-0021_6829-68771-0018_IFGM.wav"></audio></td>
+					<td><audio controls="" class="audio4"><source src="SD/hubert/1320-122617-0021_6829-68771-0018_Gaussian.wav"></audio></td>
+				</tr>
+        	</tbody>
+		</table>
+		<br>
+		<h3>WAV2VEC</h3>
+		<table>
+			<tbody>
+				<tr>
+					<td><strong>Clean</strong></td><td><strong>IFGM</strong></td><td><strong>Gaussian</strong></td>
+				</tr>
+				<tr>
+					<td><audio controls="" class="audio4"><source src="SD/wav2vec/5683-32866-0028_6829-68769-0001_Clean.wav"></audio></td>
+					<td><audio controls="" class="audio4"><source src="SD/wav2vec/5683-32866-0028_6829-68769-0001_IFGM.wav"></audio></td>
+					<td><audio controls="" class="audio4"><source src="SD/wav2vec/5683-32866-0028_6829-68769-0001_Gaussian.wav"></audio></td>
+				</tr>
+				<tr>
+					<td><audio controls="" class="audio4"><source src="SD/wav2vec/8230-279154-0016_1580-141083-0030_Clean.wav"></audio></td>
+					<td><audio controls="" class="audio4"><source src="SD/wav2vec/8230-279154-0016_1580-141083-0030_IFGM.wav"></audio></td>
+					<td><audio controls="" class="audio4"><source src="SD/wav2vec/8230-279154-0016_1580-141083-0030_Gaussian.wav"></audio></td>
+				</tr>
+        	</tbody>
+		</table>
     </div><br>
 
+	<br>
+    <div><h2>ASV</h2></div>
+    <div>
+		<br>
+		<h3>Parameters of Generating Adversarial Sample:</h3>
+		<h3>n_iters = 100, eps = 0.0006, sigma = 0.0004</h3>
+		<br>
+		<table border="1" cellspacing="0" cellpadding="0">
+			<tbody>
+				<tr><td><strong>ASV</strong></td><td>w2v2-w2v2</td><td>hubert-hubert</td><td>w2v2-hubert</td><td>hubert-w2v2</td><td>gau-w2v2</td><td>gau-hubert</td></tr>
+				<tr><td>acc</td><td>90</td><td>81</td><td>97</td><td>98</td><td>100</td><td>99</td></tr>
+				<tr><td>nsr</td><td>1.02</td><td>1.06</td><td>1.02</td><td>1.06</td><td>1.03</td><td>1.03</td></tr>
+				<tr><td>aer</td><td>59.1</td><td>58.1</td><td>41.9</td><td>45.3</td><td>17.2</td><td>14.2</td></tr>
+			</tbody>
+		</table>
+		<br>
+		<h3>HUBERT</h3>
+		<table>
+			<tbody>
+				<tr>
+					<td><strong>Clean</strong></td><td><strong>IFGM</strong></td><td><strong>Gaussian</strong></td>
+				</tr>
+				<tr>
+					<td><audio controls="" class="audio4"><source src="ASV/hubert/id10278~DSGE2F5sTcg~00008_Clean.wav"></audio></td>
+					<td><audio controls="" class="audio4"><source src="ASV/hubert/id10278~DSGE2F5sTcg~00008_IFGM.wav"></audio></td>
+					<td><audio controls="" class="audio4"><source src="ASV/hubert/id10278~DSGE2F5sTcg~00008_Gaussian.wav"></audio></td>
+				</tr>
+				<tr>
+					<td><audio controls="" class="audio4"><source src="ASV/hubert/id10283~52SYuI0cCbQ~00002_Clean.wav"></audio></td>
+					<td><audio controls="" class="audio4"><source src="ASV/hubert/id10283~52SYuI0cCbQ~00002_IFGM.wav"></audio></td>
+					<td><audio controls="" class="audio4"><source src="ASV/hubert/id10283~52SYuI0cCbQ~00002_Gaussian.wav"></audio></td>
+				</tr>
+        	</tbody>
+		</table>
+		<br>
+		<h3>WAV2VEC</h3>
+		<table>
+			<tbody>
+				<tr>
+					<td><strong>Clean</strong></td><td><strong>IFGM</strong></td><td><strong>Gaussian</strong></td>
+				</tr>
+				<tr>
+					<td><audio controls="" class="audio4"><source src="ASV/wav2vec/id10276~FDhJhEu0JUM~00011_Clean.wav"></audio></td>
+					<td><audio controls="" class="audio4"><source src="ASV/wav2vec/id10276~FDhJhEu0JUM~00011_IFGM.wav"></audio></td>
+					<td><audio controls="" class="audio4"><source src="ASV/wav2vec/id10276~FDhJhEu0JUM~00011_Gaussian.wav"></audio></td>
+				</tr>
+				<tr>
+					<td><audio controls="" class="audio4"><source src="ASV/wav2vec/id10304~GRv7pEnTwUc~00002_Clean.wav"></audio></td>
+					<td><audio controls="" class="audio4"><source src="ASV/wav2vec/id10304~GRv7pEnTwUc~00002_IFGM.wav"></audio></td>
+					<td><audio controls="" class="audio4"><source src="ASV/wav2vec/id10304~GRv7pEnTwUc~00002_Gaussian.wav"></audio></td>
+				</tr>
+        	</tbody>
+		</table>
+    </div><br>
 </body></html>
