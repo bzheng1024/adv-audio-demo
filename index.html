@@ -24,10 +24,19 @@
 		<br>
 		<table border="1" cellspacing="0" cellpadding="0">
 			<tbody>
-				<tr><td><h3>ASR</h3></td><td>w2v2-w2v2</td><td>hubert-hubert</td><td>w2v2-hubert</td><td>hubert-w2v2</td><td>gau-w2v2</td><td>gau-hubert</td></tr>
+				<tr><td><strong>ASR</strong></td><td>w2v2-w2v2</td><td>hubert-hubert</td><td>w2v2-hubert</td><td>hubert-w2v2</td><td>gau-w2v2</td><td>gau-hubert</td></tr>
 				<tr><td>wer</td><td>36.66</td><td>58.79</td><td>2.5</td><td>8.73</td><td>0.54</td><td>0</td></tr>
 				<tr><td>nsr</td><td>0.82</td><td>0.85</td><td>0.82</td><td>0.85</td><td>0.92</td><td>0.92</td></tr>
 				<tr><td>aer</td><td>90.06</td><td>83.27</td><td>44.24</td><td>61.33</td><td>34.54</td><td>22.31</td></tr>
+			</tbody>
+		</table>
+		<br>
+		<table border="1" cellspacing="0" cellpadding="0">
+			<tbody>
+				<tr><td><strong>PR</strong></td><td>w2v2-w2v2</td><td>hubert-hubert</td><td>w2v2-hubert</td><td>hubert-w2v2</td><td>gau-w2v2</td><td>gau-hubert</td></tr>
+				<tr><td>per</td><td>41.99</td><td>40.59</td><td>3.04</td><td>6.74</td><td>0.96</td><td>0.41</td></tr>
+				<tr><td>nsr</td><td>0.82</td><td>0.85</td><td>0.82</td><td>0.85</td><td>0.92</td><td>0.92</td></tr>
+				<tr><td>aer</td><td>97.82</td><td>79.09</td><td>42.91</td><td>61.89</td><td>37.43</td><td>21.41</td></tr>
 			</tbody>
 		</table>
 		<br>
@@ -47,6 +56,27 @@
 				<tr>
 					<td><audio controls="" class="audio4"><source src="ASR_PR/hubert/ASR/121-127105-0014_Clean.wav"></audio></td>
 					<td><audio controls="" class="audio4"><source src="ASR_PR/hubert/ASR/121-127105-0014_IFGM.wav"></audio></td>
+					<td><audio controls="" class="audio4"><source src="ASR_PR/hubert/ASR/121-127105-0014_Gaussian.wav"></audio></td>
+				</tr>
+        	</tbody>
+		</table>
+		<br>
+		<h3>WAV2VEC</h3>
+		<table>
+			<tbody>
+				<tr>
+					<td><strong>Clean</strong></td>
+					<td><strong>IFGM</strong></td>
+					<td><strong>Gaussian</strong></td>
+				</tr>
+				<tr>
+					<td><audio controls="" class="audio4"><source src="ASR_PR/hubert/ASR/61-70970-0006_Clean.wav"></audio></td>
+					<td><audio controls="" class="audio4"><source src="ASR_PR/wav2vec/ASR/61-70970-0006_IFGM.wav"></audio></td>
+					<td><audio controls="" class="audio4"><source src="ASR_PR/hubert/ASR/61-70970-0006_Gaussian.wav"></audio></td>
+				</tr>
+				<tr>
+					<td><audio controls="" class="audio4"><source src="ASR_PR/hubert/ASR/121-127105-0014_Clean.wav"></audio></td>
+					<td><audio controls="" class="audio4"><source src="ASR_PR/wav2vec/ASR/121-127105-0014_IFGM.wav"></audio></td>
 					<td><audio controls="" class="audio4"><source src="ASR_PR/hubert/ASR/121-127105-0014_Gaussian.wav"></audio></td>
 				</tr>
         	</tbody>
